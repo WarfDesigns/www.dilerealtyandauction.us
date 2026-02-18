@@ -1,0 +1,109 @@
+{
+  "_comment": "!!! THIS IS AN AUTOMATICALLY GENERATED FILE - DO NOT EDIT !!!",
+  "module": {
+    "meta": {
+      "adminLabel": {
+        "desktop": {
+          "value": "Woo Product Gallery"
+        }
+      }
+    }
+  },
+  "title": {
+    "decoration": {
+      "font": {
+        "font": {
+          "desktop": {
+            "value": {
+              "headingLevel": "h3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "content": {
+    "advanced": {
+      "product": {
+        "desktop": {
+          "value": "dynamic"
+        }
+      },
+      "postsNumber": {
+        "desktop": {
+          "value": "4"
+        }
+      },
+      "showPagination": {
+        "desktop": {
+          "value": "on"
+        }
+      },
+      "showTitleAndCaption": {
+        "desktop": {
+          "value": "on"
+        }
+      }
+    }
+  },
+  "layout": {
+    "advanced": {
+      "fullwidth": {
+        "desktop": {
+          "value": "on"
+        }
+      },
+      "orientation": {
+        "desktop": {
+          "value": "landscape"
+        }
+      }
+    }
+  },
+  "galleryGrid": {
+    "decoration": {
+      "layout": {
+        "desktop": {
+          "value": {
+            "display": "grid",
+            "gridColumnCount": "4"
+          }
+        }
+      }
+    }
+  },
+  "image": {
+    "advanced": {
+      "galleryOrderby": {
+        "desktop": {
+          "value": "off"
+        }
+      }
+    }
+  },
+  "overlay": {
+    "decoration": {
+      "background": {
+        "desktop": {
+          "value": {
+            "color": "rgba(255,255,255,0.9)"
+          }
+        }
+      }
+    }
+  },
+  "overlayIcon": {
+    "decoration": {
+      "icon": {
+        "desktop": {
+          "value": {
+            "unicode": "&#x21;",
+            "type": "divi",
+            "weight": "400",
+            "color": "#333333"
+          }
+        }
+      }
+    }
+  }
+}

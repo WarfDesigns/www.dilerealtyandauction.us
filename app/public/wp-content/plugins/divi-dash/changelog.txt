@@ -1,0 +1,39 @@
+version 1.0.6 ( updated 06-16-2025 )
+- Fixed Google Fonts JSON Structure – Resolved conflict between Divi and Divi Dash by ensuring consistent JSON format for Google Fonts data
+
+version 1.0.5 ( updated 06-09-2025 )
+- Resolved the issue preventing plugin updates from displaying after data synchronization
+
+version 1.0.4 ( updated 05-21-2025 )
+Features:
+ - Site Health Check Logs – Site health logs are now added to the debug.log file upon connection failure for easier troubleshooting.
+
+Fixes:
+ - Fixed Translation Loading Issue – Resolved _load_textdomain_just_in_time function notice from WordPress Dashboard.
+ - Fixed issue where WordPress site did not show as disconnected when the website was deleted from Divi Dash.
+ - Plugin State Retention – The plugin now retains its state after updates.
+ - Fixed theme update reliability issues that occurred after data synchronization.
+
+Improvements:
+ - Divi Theme Installation Notification – Improved messaging when Divi is already installed.
+ - Enhanced WP Admin Security – Strengthened security measures for WP admin login from Dash.
+ - Reworked user management to minimize PII storage and implemented on-demand data retrieval for improved privacy and efficiency.
+
+version 1.0.3 ( updated 09-25-2024 )
+Fixes:
+ - Fixed a fatal error that occurred when activating Divi Dash with the Divi 5 Public Alpha.
+
+version 1.0.2 ( updated 09-11-2024 )
+Improvements:
+ - Made Divi Dash system status report more readable.
+
+version 1.0.1 ( updated 09-04-2024 )
+Fixes:
+ - Resolved issue with syncing site data when using Two-Factor Authentication plugins.
+ - Minor bug fixes.
+
+Improvements:
+ - Added a warning popup when deactivating the Divi Dash plugin.
+
+version 1.0.0 ( updated 08-02-2024 )
+- Initial release

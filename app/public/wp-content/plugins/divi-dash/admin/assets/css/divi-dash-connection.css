@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.divi-dash-connection-details-dialog {
+    display: grid;
+    width: 500px;
+
+    border-radius: 3px;
+    background: #FFF;
+    overflow: hidden;
+
+    /* Modal Shadow */
+    box-shadow: 0px 5px 30px 0px rgba(43, 135, 218, 0.20);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
+.divi-dash-page .divi-dash-connection-details-dialog{
+    transform: none;
+}
+
+.divi-dash-connection-details-dialog .ui-dialog-titlebar {
+    display: flex;
+    padding: 14px 20px 14px 24px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    background:#6C2EB9;
+    cursor: move;
+}
+
+.divi-dash-connection-details-dialog .ui-dialog-titlebar .ui-dialog-title {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.divi-dash-connection-details-dialog .ui-dialog-titlebar-close {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.divi-dash-connection-details-dialog .ui-dialog-titlebar-close:before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14.0067 12.5801L10.1168 8.69014C9.72416 8.31144 9.10048 8.3173 8.71503 8.70331C8.32958 9.08932 8.3246 9.71303 8.70385 10.1051L12.5927 13.9941L8.70285 17.8831C8.3124 18.2739 8.31262 18.9072 8.70335 19.2976C9.09407 19.6881 9.72734 19.6879 10.1178 19.2971L14.0067 15.4071L17.8955 19.2971C18.2879 19.6761 18.9116 19.6707 19.2973 19.285C19.683 18.8992 19.6884 18.2755 19.3095 17.8831L15.4196 13.9931L19.3095 10.1051C19.6884 9.71276 19.683 9.08906 19.2973 8.70332C18.9116 8.31759 18.2879 8.31217 17.8955 8.69114L14.0057 12.5801H14.0067Z" fill="white"/></svg>');
+}
+
+.divi-dash-popup-container {
+    display: grid;
+    font-style: normal;
+    padding: 30px;
+    gap: 20px;
+    background: #FFF;
+}
+
+.divi-dash-popup-container p,
+.divi-dash-popup-container h3,
+.divi-dash-popup-container h4{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.divi-dash-popup-container p {
+    color: #4C5866;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    line-height: 1.5em !important;
+}
+
+.divi-dash-popup-container p.success {
+    font-size: 15px;
+    text-align: center;
+    line-height: 20.43px;    
+}
+
+.divi-dash-popup-container h4 {
+    color: #32373C;
+    font-feature-settings: 'clig' off, 'liga' off;
+}
+
+.divi-dash-popup-container h4, .divi-dash-popup-container a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.divi-dash-popup-container img {
+    width: 100%;
+    height: 192px;
+}
+
+.divi-dash-popup-container input, .divi-dash-page-container input {
+    height: 30px;
+    background-color: #F1F5F9;
+    color: #A2B0C1;
+    padding: 6px 8px;
+    box-shadow: none;
+    border-color: transparent;
+    border-radius: 3px;
+    font-size: 13px;
+    cursor: pointer;
+
+}
+
+.divi-dash-popup-container .action, .divi-dash-page-container .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+
+.divi-dash-popup-container a.btn, .divi-dash-page-wrapper a.btn {
+    display: flex;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    font-weight: 500;
+}
+
+.divi-dash-popup-container a.btn.disabled, .divi-dash-page-wrapper a.btn.disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.divi-dash-popup-container .primary-btn, .divi-dash-page-wrapper .primary-btn {
+    background: #2B87DA;
+}
+
+.divi-dash-popup-container .danger-btn, .divi-dash-page-wrapper .danger-btn {
+    background: #FF454E;
+}
+
+.divi-dash-popup-container.connection-failed {
+    gap: 24px;
+}
+
+.divi-dash-popup-container.connection-failed h3 {
+    color:#FF454E;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.divi-dash-popup-container.connection-failed h3 span {
+    display: block;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.divi-dash-popup-container.connection-failed p {
+    color: #4C5866;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.et_manage_input {
+    position: relative;
+}
+
+.divi-dash-popup-container .copy-status, .divi-dash-page-container .copy-status {
+    display: block;
+    padding: 4px 8px;
+    border-radius: 8px;
+    background: #FF4A9E;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 250ms ease-in-out;
+    width: 90px;
+    text-align: center;
+    animation: fade-in 250ms;
+}
+
+.divi-dash-popup-container .copy-status::after, .divi-dash-page-container .copy-status::after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #FF4A9E;
+    position: absolute;
+    bottom: -9px;
+    right: 50%;
+    transform: translateX(50%);
+    transition: all 250ms ease-in-out;
+}
+
+.divi-dash-popup-container .copy-status.copy-success, .divi-dash-page-container .copy-status.copy-success {
+    background: #34dd87;
+    width: 70px;
+}
+
+.divi-dash-popup-container .copy-status.copy-success::after, .divi-dash-page-container .copy-status.copy-success::after {
+    border-top: 10px solid #34dd87;
+}
+
+.divi-dash-page-wrapper{
+    width: 100%;
+}
+
+.divi-dash-page-wrapper .divi-dash-page-container{
+    margin: 70px auto;
+    width: 600px;
+}
+
+.divi-dash-page-wrapper .divi-dash-card{
+    margin-top:40px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0px 5px 30px 0px rgba(43, 135, 218, 0.20);
+}
+
+.divi-dash-page-wrapper .divi-dash-card .card-header{
+    margin-top: 0px;
+}
+
+.divi-dash-page-wrapper a.btn {
+    display: inline-block;
+    width: auto;
+}
+
+.divi-dash-page-wrapper .divi-dash-promo-image{
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+.divi-dash-page-wrapper .divi-dash-promo-image img{
+    width: 980px;
+    max-width: 100%;
+}
+
+.divi-dash-page-wrapper.troubleshoot-page .header {
+    text-align: center;
+}
+
+.divi-dash-page-wrapper.troubleshoot-page .card-footer {
+    justify-content: flex-start;
+}
+
+@media only screen and (max-width: 600px) {
+    .divi-dash-connection-details-dialog {
+        width: 300px !important;
+    }
+}
