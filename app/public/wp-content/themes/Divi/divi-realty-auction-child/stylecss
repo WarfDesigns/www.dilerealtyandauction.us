@@ -1,0 +1,231 @@
+/*
+Theme Name: Diler Realty & Auction Child
+Theme URI: https://www.dilerealtyandauction.us
+Description: Custom Divi child theme for a modern real estate and auction website.
+Author: Codex
+Template: Divi
+Version: 1.0.0
+*/
+
+:root {
+  --dra-primary: #0d1b3d; /* Navy */
+  --dra-secondary: #c1121f; /* Red */
+  --dra-accent: #1d3557;
+  --dra-text: #1f2937;
+  --dra-muted: #4b5563;
+  --dra-bg: #f8fafc;
+}
+
+body {
+  color: var(--dra-text);
+  background: #fff;
+}
+
+.dra-hero {
+  background:
+    linear-gradient(125deg, rgba(13, 27, 61, 0.84), rgba(193, 18, 31, 0.58)),
+    var(--dra-hero-image) center/cover no-repeat;
+  color: #fff;
+  padding: 150px 0 135px;
+}
+
+.dra-hero h1 {
+  color: #fff;
+  font-size: clamp(2.3rem, 5vw, 4.2rem);
+  line-height: 1.06;
+  margin-bottom: 18px;
+  text-shadow: 0 8px 24px rgba(0, 0, 0, 0.32);
+}
+
+.dra-hero p {
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 1.12rem;
+  max-width: 760px;
+  margin: 0 auto 28px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.dra-btn-wrap {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dra-btn {
+  display: inline-block;
+  padding: 13px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+.dra-btn--gold {
+  background: var(--dra-secondary);
+  border: 2px solid var(--dra-secondary);
+  color: #fff;
+}
+
+.dra-btn--ghost {
+  border: 2px solid #fff;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dra-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.dra-section-title {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.dra-section-title h2 {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  color: var(--dra-primary);
+  margin-bottom: 10px;
+}
+
+.dra-section-title p {
+  color: var(--dra-muted);
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.dra-service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.dra-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: 0 14px 28px rgba(13, 27, 61, 0.1);
+  border-top: 4px solid var(--dra-secondary);
+  height: 100%;
+}
+
+.dra-card h3 {
+  color: var(--dra-primary);
+  margin-bottom: 10px;
+}
+
+.dra-card p {
+  color: var(--dra-muted);
+  margin: 0;
+}
+
+.dra-feature-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.dra-feature {
+  border-left: 4px solid var(--dra-secondary);
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(17, 24, 39, 0.06);
+}
+
+.dra-highlight {
+  background: linear-gradient(135deg, #0d1b3d 0%, #c1121f 100%);
+  color: #fff;
+  border-radius: 16px;
+  padding: 36px;
+  text-align: center;
+}
+
+.dra-highlight h2,
+.dra-highlight p {
+  color: #fff;
+}
+
+.dra-highlight .dra-btn--gold {
+  margin-top: 8px;
+  background: #fff;
+  border-color: #fff;
+  color: var(--dra-primary);
+}
+
+.dra-auction-steps {
+  counter-reset: auction-step;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+}
+
+.dra-step {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 10px 25px rgba(13, 27, 61, 0.08);
+  position: relative;
+  padding-top: 58px;
+}
+
+.dra-step::before {
+  counter-increment: auction-step;
+  content: counter(auction-step);
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--dra-secondary);
+  color: #fff;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+
+.dra-contact {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 24px;
+}
+
+.dra-contact-panel,
+.dra-hours {
+  background: #fff;
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: 0 10px 24px rgba(31, 41, 55, 0.08);
+}
+
+.dra-contact a {
+  color: var(--dra-primary);
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .dra-contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Divi utility helpers for imported layouts */
+.et_pb_section.dra-hero {
+  background:
+    linear-gradient(125deg, rgba(13, 27, 61, 0.84), rgba(193, 18, 31, 0.58)),
+    var(--dra-hero-image, url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1800&q=80")) center/cover no-repeat;
+}
+
+.et_pb_button.dra-btn--gold {
+  background: var(--dra-secondary) !important;
+  border-color: var(--dra-secondary) !important;
+  color: #fff !important;
+}
+
+.et_pb_button.dra-btn--ghost {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: #fff !important;
+  color: #fff !important;
+}
